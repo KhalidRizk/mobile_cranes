@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile Cranes Course</title>
+    <title>Mobile Cranes Course - Petrojet</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -14,16 +14,31 @@
         <!-- Sidebar Navigation -->
         <aside class="sidebar">
             <div class="sidebar-header">
-                <div class="dept-badge">EQUIPMENT DEPARTMENT</div>
-                <h1>MOBILE CRANES COURSE</h1>
+                <div style="text-align: center; margin-bottom: 16px;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/31/Petrojet-logo.png" alt="Petrojet Logo" style="max-width: 120px;">
+                </div>
+                <div class="dept-badge">
+                    <span class="lang-en">EQUIPMENT DEPARTMENT</span>
+                    <span class="lang-ar">إدارة المعدات</span>
+                </div>
+                <h1>
+                    <span class="lang-en">MOBILE CRANES COURSE</span>
+                    <span class="lang-ar">دورة الرافعات المتحركة</span>
+                </h1>
                 <div class="instructor-info">
-                    <p class="instructor-name">Engineer / Ahmed Eissa</p>
-                    <p class="training-type">TECHNICAL MAINTENANCE TRAINING</p>
+                    <p class="instructor-name">
+                        <span class="lang-en">Engineer / Ahmed Eissa</span>
+                        <span class="lang-ar">المهندس / أحمد عيسى</span>
+                    </p>
+                    <p class="training-type">
+                        <span class="lang-en">TECHNICAL MAINTENANCE TRAINING</span>
+                        <span class="lang-ar">تدريب الصيانة الفنية</span>
+                    </p>
                 </div>
             </div>
             
             <nav class="toc" id="toc">
-                <!-- TOC items will be injected here by JS -->
+                <!-- TOC sections will be injected here by JS -->
             </nav>
         </aside>
 
@@ -35,9 +50,10 @@
                     <button id="menu-toggle" class="icon-btn" aria-label="Toggle Menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
                     </button>
-                    <h2 id="current-slide-title">Introduction</h2>
+                    <h2 id="current-slide-title">Loading...</h2>
                 </div>
                 <div class="topbar-right">
+                    <button id="lang-toggle" class="lang-btn">عربي</button>
                     <button id="theme-toggle" class="icon-btn theme-toggle" aria-label="Toggle Dark Mode">
                         <svg class="sun-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
                         <svg class="moon-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
@@ -46,149 +62,34 @@
             </header>
 
             <!-- Slides Container -->
-            <div class="slides-wrapper">
-                
-                <!-- Slide 1 -->
-                <section class="slide active" id="slide-1" data-title="1. Introduction to Mobile Cranes">
-                    <div class="slide-content">
-                        <div class="bilingual-grid">
-                            <div class="lang-en" dir="ltr">
-                                <h3>Introduction</h3>
-                                <p>Welcome to the Mobile Cranes Course. This training program is designed to provide comprehensive technical knowledge regarding the maintenance, operation, and safety protocols for various types of mobile cranes.</p>
-                                <p>As part of the Equipment Department's ongoing commitment to excellence, this course covers fundamental concepts and advanced troubleshooting techniques.</p>
-                                <img src="https://images.unsplash.com/photo-1541888062-8178822db059?auto=format&fit=crop&w=800&q=80" alt="Mobile Crane Demo" class="slide-image">
-                            </div>
-                            <div class="lang-ar" dir="rtl">
-                                <h3>مقدمة</h3>
-                                <p>مرحباً بكم في دورة الرافعات المتحركة. تم تصميم هذا البرنامج التدريبي لتوفير معرفة فنية شاملة فيما يتعلق ببروتوكولات الصيانة والتشغيل والسلامة لأنواع مختلفة من الرافعات المتحركة.</p>
-                                <p>كجزء من التزام إدارة المعدات المستمر بالتميز، تغطي هذه الدورة المفاهيم الأساسية وتقنيات استكشاف الأخطاء وإصلاحها المتقدمة.</p>
-                                <img src="https://images.unsplash.com/photo-1541888062-8178822db059?auto=format&fit=crop&w=800&q=80" alt="Mobile Crane Demo" class="slide-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Slide 2 -->
-                <section class="slide" id="slide-2" data-title="2. Types of Mobile Cranes">
-                    <div class="slide-content">
-                        <div class="bilingual-grid">
-                            <div class="lang-en" dir="ltr">
-                                <h3>Types of Mobile Cranes</h3>
-                                <ul>
-                                    <li><strong>Crawler Cranes:</strong> Track-mounted for stability and mobility on soft surfaces.</li>
-                                    <li><strong>Truck-Mounted Cranes:</strong> Hydraulic cranes mounted on a truck chassis for highway travel.</li>
-                                    <li><strong>Rough Terrain Cranes:</strong> Designed for off-road applications with oversized tires.</li>
-                                    <li><strong>All Terrain Cranes:</strong> Combining the mobility of truck cranes with the off-road capability of rough terrain cranes.</li>
-                                </ul>
-                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356fce?auto=format&fit=crop&w=800&q=80" alt="Construction Site" class="slide-image">
-                            </div>
-                            <div class="lang-ar" dir="rtl">
-                                <h3>أنواع الرافعات المتحركة</h3>
-                                <ul>
-                                    <li><strong>الرافعات المجنزرة:</strong> مثبتة على مسارات لتحقيق الاستقرار والحركة على الأسطح الناعمة.</li>
-                                    <li><strong>الرافعات المثبتة على شاحنات:</strong> رافعات هيدروليكية مثبتة على هيكل شاحنة للسفر على الطرق السريعة.</li>
-                                    <li><strong>رافعات الأراضي الوعرة:</strong> مصممة للتطبيقات على الطرق الوعرة مع إطارات كبيرة الحجم.</li>
-                                    <li><strong>رافعات لجميع التضاريس:</strong> تجمع بين حركة رافعات الشاحنات وقدرة رافعات الأراضي الوعرة.</li>
-                                </ul>
-                                <img src="https://images.unsplash.com/photo-1504307651254-35680f356fce?auto=format&fit=crop&w=800&q=80" alt="Construction Site" class="slide-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Slide 3 -->
-                <section class="slide" id="slide-3" data-title="3. Basic Components">
-                    <div class="slide-content">
-                        <div class="bilingual-grid">
-                            <div class="lang-en" dir="ltr">
-                                <h3>Basic Components</h3>
-                                <p>Understanding the anatomy of a crane is crucial for technical maintenance. The primary components include:</p>
-                                <ul>
-                                    <li><strong>Boom:</strong> The long telescopic or lattice arm.</li>
-                                    <li><strong>Jib:</strong> An extension added to the boom.</li>
-                                    <li><strong>Outriggers:</strong> Supports that extend outward to stabilize the crane.</li>
-                                    <li><strong>Counterweights:</strong> Weights used to offset the load.</li>
-                                </ul>
-                            </div>
-                            <div class="lang-ar" dir="rtl">
-                                <h3>المكونات الأساسية</h3>
-                                <p>يعد فهم تشريح الرافعة أمرًا بالغ الأهمية للصيانة الفنية. تشمل المكونات الأساسية ما يلي:</p>
-                                <ul>
-                                    <li><strong>ذراع التطويل (Boom):</strong> الذراع التلسكوبي أو الشبكي الطويل.</li>
-                                    <li><strong>الوصلة (Jib):</strong> امتداد يضاف إلى ذراع التطويل.</li>
-                                    <li><strong>الركائز (Outriggers):</strong> دعامات تمتد للخارج لتثبيت الرافعة.</li>
-                                    <li><strong>الأوزان الموازنة (Counterweights):</strong> أوزان تستخدم لموازنة الحمل.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                
-                <!-- Slide 4 -->
-                <section class="slide" id="slide-4" data-title="4. Hydraulic Systems">
-                    <div class="slide-content">
-                        <div class="bilingual-grid">
-                            <div class="lang-en" dir="ltr">
-                                <h3>Hydraulic Systems</h3>
-                                <p>Mobile cranes rely heavily on hydraulic systems for lifting and extending the boom. Routine maintenance of hydraulic pumps, valves, and fluid levels is essential to prevent operational failures.</p>
-                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Hydraulic systems abstract" class="slide-image">
-                            </div>
-                            <div class="lang-ar" dir="rtl">
-                                <h3>الأنظمة الهيدروليكية</h3>
-                                <p>تعتمد الرافعات المتحركة بشكل كبير على الأنظمة الهيدروليكية للرفع وتمديد ذراع التطويل. الصيانة الروتينية للمضخات الهيدروليكية والصمامات ومستويات السوائل ضرورية لمنع أعطال التشغيل.</p>
-                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" alt="Hydraulic systems abstract" class="slide-image">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Slide 5 -->
-                <section class="slide" id="slide-5" data-title="5. Safety Guidelines">
-                    <div class="slide-content">
-                        <div class="bilingual-grid">
-                            <div class="lang-en" dir="ltr">
-                                <h3>Safety Guidelines</h3>
-                                <div class="alert alert-warning">
-                                    <strong>Warning:</strong> Never exceed the crane's maximum load capacity as stated in the manufacturer's load chart.
-                                </div>
-                                <ul>
-                                    <li>Always perform daily pre-operation inspections.</li>
-                                    <li>Ensure ground stability before deploying outriggers.</li>
-                                    <li>Maintain proper distance from power lines.</li>
-                                </ul>
-                            </div>
-                            <div class="lang-ar" dir="rtl">
-                                <h3>إرشادات السلامة</h3>
-                                <div class="alert alert-warning">
-                                    <strong>تحذير:</strong> لا تتجاوز أبدًا الحد الأقصى لسعة حمل الرافعة كما هو موضح في مخطط الحمل الخاص بالشركة المصنعة.
-                                </div>
-                                <ul>
-                                    <li>قم دائمًا بإجراء عمليات التفتيش اليومية قبل التشغيل.</li>
-                                    <li>تأكد من استقرار الأرض قبل نشر الركائز.</li>
-                                    <li>حافظ على مسافة مناسبة من خطوط الكهرباء.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
+            <div class="slides-wrapper" id="slides-wrapper">
+                <!-- Slides will be injected here by JS -->
             </div>
 
             <!-- Bottom Navigation -->
             <footer class="slide-nav">
                 <button id="btn-prev" class="nav-btn" disabled>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                    Previous
+                    <span class="lang-en">Previous</span>
+                    <span class="lang-ar">السابق</span>
                 </button>
-                <div class="slide-counter">Slide <span id="current-index">1</span> of <span id="total-slides">X</span></div>
+                <div class="slide-counter">
+                    <span class="lang-en">Slide <span id="current-index-en">0</span> of <span id="total-slides-en">0</span></span>
+                    <span class="lang-ar">شريحة <span id="current-index-ar">0</span> من <span id="total-slides-ar">0</span></span>
+                </div>
                 <button id="btn-next" class="nav-btn">
-                    Next
+                    <span class="lang-en">Next</span>
+                    <span class="lang-ar">التالي</span>
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
                 </button>
             </footer>
         </main>
     </div>
 
+    <!-- Load data first, then logic -->
+    <script src="content/lecture-5.js"></script>
+    <script src="content/lecture-6.js"></script>
+    <script src="content/course-index.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
